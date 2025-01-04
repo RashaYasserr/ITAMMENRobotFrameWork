@@ -73,10 +73,5 @@ If you'd like to contribute to this project:
 3. Commit your changes and push to your fork.
 4. Open a pull request on the original repository.
 
-## License
-Specify the project's license here (e.g., MIT, Apache 2.0).
 
----
-
-Feel free to reach out for any queries or suggestions!
 
