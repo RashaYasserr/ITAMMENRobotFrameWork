@@ -17,8 +17,8 @@ ITAMMEN is a test automation project designed to streamline the testing process 
   - **`Locators/`**: Stores locator files, such as XPath, CSS selectors, or IDs, used to interact with UI elements.
   - **`Keywords/`**: Contains reusable keywords and functions that abstract common test operations.
   - **`Pages/`**: Each page or feature is organized into 4 main files:
-    - **`namepage.robot`**: Contains the full test scenario for the page.
-    - **`Assertions/`**: Specific validations or assertions for the page.
+    - **`namepage.robot`**: The main file containing the full test scenario for a specific page or feature
+    - **`Assertions/`**: Assertions specific to the page, ensuring validation steps are modular.
     - **`Locators/`**: Locator files specific to the page elements.
     - **`Keywords/`**: Reusable operations or actions tailored to the page.
 
@@ -28,6 +28,9 @@ ITAMMEN is a test automation project designed to streamline the testing process 
 
 - **`Results/`**
   Stores the output from test executions, including logs, reports, and debug files.
+- **`log.html/`**: Execution logs.
+- **`report.html/`**: A summary report of the test run.
+- **`output.xml/`**: A detailed XML file for further analysis.
 
 - **`__pycache__/`**
   A directory for Python bytecode files generated automatically during execution.
