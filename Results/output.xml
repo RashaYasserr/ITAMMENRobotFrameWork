@@ -1,0 +1,1565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-01-02T14:26:09.247407" rpa="false" schemaversion="5">
+<suite id="s1" name="SignUpScenario" source="F:\Robot_Projects\ITAMMEN\TestCases\SignUpScenario.robot">
+<test id="s1-t1" name="Verify that user can sign up with a valid email" line="14">
+<kw name="Begin Web Test" owner="CommonKeyWords" type="SETUP">
+<kw name="Configure Test Timing" owner="CommonKeyWords">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${COMMON_IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:26:11.199129" elapsed="0.000667"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_TIME_OUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-01-02T14:26:11.200259" elapsed="0.000440"/>
+</kw>
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_LOAD_TIME_OUT}</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:26:11.201073" elapsed="0.000404"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${COMMON_SELENIUM_SPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-02T14:26:11.201763" elapsed="0.000368"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:11.196877" elapsed="0.005470"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:11.207827" level="INFO">Opening browser 'chrome' to base url 'https://itammen.com'.</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:26:11.206597" elapsed="14.081003"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:26:11.204177" elapsed="14.083935"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:26:11.202855" elapsed="14.085675"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:25.294681" level="INFO">Using existing browser from index 1.</msg>
+<msg time="2025-01-02T14:26:25.295030" level="INFO">Opening url 'https://itammen.com'</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:26:25.293918" elapsed="1.100475"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:26:25.292164" elapsed="1.102495"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:26:25.289411" elapsed="1.105472"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<arg>@{KWARGS}</arg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-02T14:26:26.397555" elapsed="0.235927"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:26:26.396706" elapsed="0.237114"/>
+</kw>
+<arg>MAXIMIZE BROWSER WINDOW</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:26:26.395621" elapsed="0.239952"/>
+</kw>
+<kw name="Zoom Out" owner="CommonKeyWords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:26.638651" level="INFO">Executing JavaScript:
+document.body.style.zoom='75%'
+Without any arguments.</msg>
+<arg>document.body.style.zoom='75%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-02T14:26:26.637615" elapsed="0.204718"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:26.636719" elapsed="0.205941"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:11.194252" elapsed="15.648604"/>
+</kw>
+<kw name="Sign Up With Valid Email" owner="SignUp">
+<kw name="Navigate To SingUp Page" owner="Header">
+<kw name="Assert for the header" owner="HeaderKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HEADR_lOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:26:26.845619" elapsed="0.330765"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:26.845103" elapsed="0.331617"/>
+</kw>
+<kw name="Click on SingUp Buttton" owner="HeaderKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:27.178568" level="INFO">Clicking element '//a [@class ='register ng-star-inserted']'.</msg>
+<arg>${SIGNUP-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:27.178047" elapsed="0.848708"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:26:28.027675" elapsed="0.357284"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:27.177326" elapsed="1.208460"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:26.844579" elapsed="1.541593"/>
+</kw>
+<kw name="Enter User Information" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:28.389264" level="INFO">Typing text 'Rasha Yasser' into text field '//input[@placeholder='Enter Your Name']'.</msg>
+<arg>${USER_NAME_INPUT}</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:28.388059" elapsed="0.698467"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:29.087762" level="INFO">Typing text '08-11-1999' into text field '//input[@placeholder='Enter Your DOB']'.</msg>
+<arg>${DATE_OF_BIRTH_INPUT}</arg>
+<arg>${BRITH_DATE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:29.087115" elapsed="0.549432"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:28.386882" elapsed="1.250059"/>
+</kw>
+<kw name="Enter Valid Email" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:29.638612" level="INFO">Typing text 'farry123@gmail.com' into text field '//input[@placeholder='Enter Your email']'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:29.638168" elapsed="0.641157"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:29.637443" elapsed="0.642206"/>
+</kw>
+<kw name="Select Gender" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:30.281377" level="INFO">Clicking element '//mat-radio-button[@id="mat-radio-6"]'.</msg>
+<arg>${FEMALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:30.280971" elapsed="0.405531"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:30.280076" elapsed="0.406717"/>
+</kw>
+<kw name="Accept Terms and Conditions" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:30.688254" level="INFO">Clicking element '//span[@class='mat-checkbox-inner-container' ]'.</msg>
+<arg>${TERMS_AND_CONDITIONS_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:30.687831" elapsed="0.455574"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:30.687223" elapsed="0.456633"/>
+</kw>
+<kw name="Click on SignUp Button" owner="SignUpKeyWords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-02T14:26:31.145986" elapsed="0.538426"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:26:31.684926" elapsed="0.235479"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:31.921456" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:31.920916" elapsed="0.423597"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:31.144689" elapsed="1.200111"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>OTP Code</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-02T14:26:32.345178" elapsed="0.423187"/>
+</kw>
+<kw name="Enter OTP" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:32.771465" level="INFO">Typing text '1' into text field '(//input[@autocomplete="one-time-code"])[1]'.</msg>
+<arg>${OTP_FIELD_1}</arg>
+<arg>${OTP1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:32.770633" elapsed="0.654708"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:33.426412" level="INFO">Typing text '1' into text field '(//input[@autocomplete="one-time-code"])[2]'.</msg>
+<arg>${OTP_FIELD_2}</arg>
+<arg>${OTP2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:33.425839" elapsed="0.542704"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:33.970999" level="INFO">Typing text '1' into text field '(//input[@autocomplete="one-time-code"])[3]'.</msg>
+<arg>${OTP_FIELD_3}</arg>
+<arg>${OTP3}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:33.969649" elapsed="0.891733"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:34.862437" level="INFO">Typing text '1' into text field '(//input[@autocomplete="one-time-code"])[4]'.</msg>
+<arg>${OTP_FIELD_4}</arg>
+<arg>${OTP4}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:34.861904" elapsed="0.708798"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:35.577787" level="INFO">Typing text '1' into text field '(//input[@autocomplete="one-time-code"])[5]'.</msg>
+<arg>${OTP_FIELD_5}</arg>
+<arg>${OTP5}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:35.575909" elapsed="0.561548"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:36.138971" level="INFO">Typing text '1' into text field '(//input[@autocomplete="one-time-code"])[6]'.</msg>
+<arg>${OTP_FIELD_6}</arg>
+<arg>${OTP6}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:36.138188" elapsed="0.559187"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:32.769417" elapsed="3.928276"/>
+</kw>
+<kw name="Click on Confirm OTP Button" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:36.699273" level="INFO">Clicking element '//*[@id="mat-dialog-0"]/app-otp-dialog/section/div/button'.</msg>
+<arg>${OTP_CONFIRME_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:36.698829" elapsed="0.385673"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:36.698182" elapsed="0.386849"/>
+</kw>
+<kw name="Assert On Subscription Page" owner="SignUpKeyWords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SUBSCRIPTION_PAGE_HEADER}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-02T14:26:37.086853" elapsed="0.132612"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:37.085751" elapsed="0.134020"/>
+</kw>
+<kw name="Click On Subscribe Button" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:37.221519" level="INFO">Clicking element '//button [@routerlink='/subscribe']'.</msg>
+<msg time="2025-01-02T14:26:39.100961" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-407.png"&gt;&lt;img src="selenium-screenshot-407.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-02T14:26:39.101436" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-giq-c367="" routerlink="/subscribe" tabindex="0" ng-reflect-router-link="/subscribe"&gt;...&lt;/button&gt; is not clickable at point (805, 348). Other element would receive the click: &lt;div _ngcontent-giq-c315="" class="reset-password__container"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF65FDCFB05+28789]
+	(No symbol) [0x00007FF65FD386E0]
+	(No symbol) [0x00007FF65FBD592A]
+	(No symbol) [0x00007FF65FC30FDE]
+	(No symbol) [0x00007FF65FC2EA7C]
+	(No symbol) [0x00007FF65FC2BC46]
+	(No symbol) [0x00007FF65FC2ABA1]
+	(No symbol) [0x00007FF65FC1CD60]
+	(No symbol) [0x00007FF65FC4F43A]
+	(No symbol) [0x00007FF65FC1C5B6]
+	(No symbol) [0x00007FF65FC4F650]
+	(No symbol) [0x00007FF65FC6F654]
+	(No symbol) [0x00007FF65FC4F1E3]
+	(No symbol) [0x00007FF65FC1A938]
+	(No symbol) [0x00007FF65FC1BAA1]
+	GetHandleVerifier [0x00007FF66010933D+3410093]
+	GetHandleVerifier [0x00007FF66011E7DD+3497293]
+	GetHandleVerifier [0x00007FF660112A73+3448803]
+	GetHandleVerifier [0x00007FF65FE97BBB+848171]
+	(No symbol) [0x00007FF65FD43C3F]
+	(No symbol) [0x00007FF65FD3F6E4]
+	(No symbol) [0x00007FF65FD3F87D]
+	(No symbol) [0x00007FF65FD2ED49]
+	BaseThreadInitThunk [0x00007FFC09167344+20]
+	RtlUserThreadStart [0x00007FFC0A8026B1+33]
+</msg>
+<arg>${SUBSCRIBE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-02T14:26:37.221054" elapsed="1.911185">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-giq-c367="" routerlink="/subscribe" tabindex="0" ng-reflect-router-link="/subscribe"&gt;...&lt;/button&gt; is not clickable at point (805, 348). Other element would receive the click: &lt;div _ngcontent-giq-c315="" class="reset-password__container"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF65FDCFB05+28789]
+	(No symbol) [0x00007FF65FD386E0]
+	(No symbol) [0x00007FF65FBD592A]
+	(No symbol) [0x00007FF65FC30FDE]
+	(No symbol) [0x00007FF65FC2EA7C]
+	(No symbol) [0x00007FF65FC2BC46]
+	(No symbol) [0x00007FF65FC2ABA1]
+	(No symbol) [0x00007FF65FC1CD60]
+	(No symbol) [0x00007FF65FC4F43A]
+	(No symbol) [0x00007FF65FC1C5B6]
+	(No symbol) [0x00007FF65FC4F650]
+	(No symbol) [0x00007FF65FC6F654]
+	(No symbol) [0x00007FF65FC4F1E3]
+	(No symbol) [0x00007FF65FC1A938]
+	(No symbol) [0x00007FF65FC1BAA1]
+	GetHandleVerifier [0x00007FF66010933D+3410093]
+	GetHandleVerifier [0x00007FF66011E7DD+3497293]
+	GetHandleVerifier [0x00007FF660112A73+3448803]
+	GetHandleVerifier [0x00007FF65FE97BBB+848171]
+	(No symbol) [0x00007FF65FD43C3F]
+	(No symbol) [0x00007FF65FD3F6E4]
+	(No symbol) [0x00007FF65FD3F87D]
+	(No symbol) [0x00007FF65FD2ED49]
+	BaseThreadInitThunk [0x00007FFC09167344+20]
+	RtlUserThreadStart [0x00007FFC0A8026B1+33]
+</status>
+</kw>
+<status status="FAIL" start="2025-01-02T14:26:37.220300" elapsed="1.912645">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-giq-c367="" routerlink="/subscribe" tabindex="0" ng-reflect-router-link="/subscribe"&gt;...&lt;/button&gt; is not clickable at point (805, 348). Other element would receive the click: &lt;div _ngcontent-giq-c315="" class="reset-password__container"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF65FDCFB05+28789]
+	(No symbol) [0x00007FF65FD386E0]
+	(No symbol) [0x00007FF65FBD592A]
+	(No symbol) [0x00007FF65FC30FDE]
+	(No symbol) [0x00007FF65FC2EA7C]
+	(No symbol) [0x00007FF65FC2BC46]
+	(No symbol) [0x00007FF65FC2ABA1]
+	(No symbol) [0x00007FF65FC1CD60]
+	(No symbol) [0x00007FF65FC4F43A]
+	(No symbol) [0x00007FF65FC1C5B6]
+	(No symbol) [0x00007FF65FC4F650]
+	(No symbol) [0x00007FF65FC6F654]
+	(No symbol) [0x00007FF65FC4F1E3]
+	(No symbol) [0x00007FF65FC1A938]
+	(No symbol) [0x00007FF65FC1BAA1]
+	GetHandleVerifier [0x00007FF66010933D+3410093]
+	GetHandleVerifier [0x00007FF66011E7DD+3497293]
+	GetHandleVerifier [0x00007FF660112A73+3448803]
+	GetHandleVerifier [0x00007FF65FE97BBB+848171]
+	(No symbol) [0x00007FF65FD43C3F]
+	(No symbol) [0x00007FF65FD3F6E4]
+	(No symbol) [0x00007FF65FD3F87D]
+	(No symbol) [0x00007FF65FD2ED49]
+	BaseThreadInitThunk [0x00007FFC09167344+20]
+	RtlUserThreadStart [0x00007FFC0A8026B1+33]
+</status>
+</kw>
+<kw name="Assert On Login Page" owner="SignUpKeyWords">
+<status status="NOT RUN" start="2025-01-02T14:26:39.133431" elapsed="0.000082"/>
+</kw>
+<status status="FAIL" start="2025-01-02T14:26:26.843887" elapsed="12.289852">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-giq-c367="" routerlink="/subscribe" tabindex="0" ng-reflect-router-link="/subscribe"&gt;...&lt;/button&gt; is not clickable at point (805, 348). Other element would receive the click: &lt;div _ngcontent-giq-c315="" class="reset-password__container"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF65FDCFB05+28789]
+	(No symbol) [0x00007FF65FD386E0]
+	(No symbol) [0x00007FF65FBD592A]
+	(No symbol) [0x00007FF65FC30FDE]
+	(No symbol) [0x00007FF65FC2EA7C]
+	(No symbol) [0x00007FF65FC2BC46]
+	(No symbol) [0x00007FF65FC2ABA1]
+	(No symbol) [0x00007FF65FC1CD60]
+	(No symbol) [0x00007FF65FC4F43A]
+	(No symbol) [0x00007FF65FC1C5B6]
+	(No symbol) [0x00007FF65FC4F650]
+	(No symbol) [0x00007FF65FC6F654]
+	(No symbol) [0x00007FF65FC4F1E3]
+	(No symbol) [0x00007FF65FC1A938]
+	(No symbol) [0x00007FF65FC1BAA1]
+	GetHandleVerifier [0x00007FF66010933D+3410093]
+	GetHandleVerifier [0x00007FF66011E7DD+3497293]
+	GetHandleVerifier [0x00007FF660112A73+3448803]
+	GetHandleVerifier [0x00007FF65FE97BBB+848171]
+	(No symbol) [0x00007FF65FD43C3F]
+	(No symbol) [0x00007FF65FD3F6E4]
+	(No symbol) [0x00007FF65FD3F87D]
+	(No symbol) [0x00007FF65FD2ED49]
+	BaseThreadInitThunk [0x00007FFC09167344+20]
+	RtlUserThreadStart [0x00007FFC0A8026B1+33]
+</status>
+</kw>
+<kw name="End Web Test" owner="CommonKeyWords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-02T14:26:39.135693" elapsed="2.806517"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:39.134909" elapsed="2.807711"/>
+</kw>
+<doc>This test case verifies that a user can successfully sign up using a valid email address.</doc>
+<tag>positive, valid_email</tag>
+<status status="FAIL" start="2025-01-02T14:26:11.188751" elapsed="30.755290">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button _ngcontent-giq-c367="" routerlink="/subscribe" tabindex="0" ng-reflect-router-link="/subscribe"&gt;...&lt;/button&gt; is not clickable at point (805, 348). Other element would receive the click: &lt;div _ngcontent-giq-c315="" class="reset-password__container"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF65FDCFB05+28789]
+	(No symbol) [0x00007FF65FD386E0]
+	(No symbol) [0x00007FF65FBD592A]
+	(No symbol) [0x00007FF65FC30FDE]
+	(No symbol) [0x00007FF65FC2EA7C]
+	(No symbol) [0x00007FF65FC2BC46]
+	(No symbol) [0x00007FF65FC2ABA1]
+	(No symbol) [0x00007FF65FC1CD60]
+	(No symbol) [0x00007FF65FC4F43A]
+	(No symbol) [0x00007FF65FC1C5B6]
+	(No symbol) [0x00007FF65FC4F650]
+	(No symbol) [0x00007FF65FC6F654]
+	(No symbol) [0x00007FF65FC4F1E3]
+	(No symbol) [0x00007FF65FC1A938]
+	(No symbol) [0x00007FF65FC1BAA1]
+	GetHandleVerifier [0x00007FF66010933D+3410093]
+	GetHandleVerifier [0x00007FF66011E7DD+3497293]
+	GetHandleVerifier [0x00007FF660112A73+3448803]
+	GetHandleVerifier [0x00007FF65FE97BBB+848171]
+	(No symbol) [0x00007FF65FD43C3F]
+	(No symbol) [0x00007FF65FD3F6E4]
+	(No symbol) [0x00007FF65FD3F87D]
+	(No symbol) [0x00007FF65FD2ED49]
+	BaseThreadInitThunk [0x00007FFC09167344+20]
+	RtlUserThreadStart [0x00007FFC0A8026B1+33]
+</status>
+</test>
+<test id="s1-t2" name="Verify Navigation To Login Page After Clicking Subscribe" line="19">
+<kw name="Begin Web Test" owner="CommonKeyWords" type="SETUP">
+<kw name="Configure Test Timing" owner="CommonKeyWords">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${COMMON_IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:26:41.989349" elapsed="0.001332"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_TIME_OUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-01-02T14:26:41.991635" elapsed="0.001355"/>
+</kw>
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_LOAD_TIME_OUT}</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:26:41.995259" elapsed="0.001168"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${COMMON_SELENIUM_SPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-02T14:26:41.997040" elapsed="0.000750"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:41.986663" elapsed="0.011488"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:42.005378" level="INFO">Opening browser 'chrome' to base url 'https://itammen.com'.</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:26:42.004096" elapsed="13.250016"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:26:42.001569" elapsed="13.253289"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:26:41.998768" elapsed="13.256679"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:55.258922" level="INFO">Using existing browser from index 2.</msg>
+<msg time="2025-01-02T14:26:55.259049" level="INFO">Opening url 'https://itammen.com'</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:26:55.258509" elapsed="1.218881"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:26:55.257451" elapsed="1.220225"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:26:55.256161" elapsed="1.222265"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<arg>@{KWARGS}</arg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-02T14:26:56.480722" elapsed="0.231622"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:26:56.479934" elapsed="0.232699"/>
+</kw>
+<arg>MAXIMIZE BROWSER WINDOW</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:26:56.478990" elapsed="0.233871"/>
+</kw>
+<kw name="Zoom Out" owner="CommonKeyWords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:56.716523" level="INFO">Executing JavaScript:
+document.body.style.zoom='75%'
+Without any arguments.</msg>
+<arg>document.body.style.zoom='75%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-02T14:26:56.714022" elapsed="0.215347"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:56.713421" elapsed="0.216242"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:41.984198" elapsed="14.945616"/>
+</kw>
+<kw name="Navigate To Login Page On Subscribe" owner="SignUp">
+<kw name="Navigate To SingUp Page" owner="Header">
+<kw name="Assert for the header" owner="HeaderKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HEADR_lOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:26:56.932739" elapsed="0.298708"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:56.932141" elapsed="0.299637"/>
+</kw>
+<kw name="Click on SingUp Buttton" owner="HeaderKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:57.233395" level="INFO">Clicking element '//a [@class ='register ng-star-inserted']'.</msg>
+<arg>${SIGNUP-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:57.232898" elapsed="0.697662"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:26:57.931192" elapsed="0.254246"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:57.232247" elapsed="0.953553"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:56.931577" elapsed="1.254378"/>
+</kw>
+<kw name="Enter User Information" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:58.187743" level="INFO">Typing text 'Rasha Yasser' into text field '//input[@placeholder='Enter Your Name']'.</msg>
+<arg>${USER_NAME_INPUT}</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:58.187278" elapsed="0.730098"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:58.918400" level="INFO">Typing text '08-11-1999' into text field '//input[@placeholder='Enter Your DOB']'.</msg>
+<arg>${DATE_OF_BIRTH_INPUT}</arg>
+<arg>${BRITH_DATE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:58.917858" elapsed="0.532611"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:58.186496" elapsed="1.264266"/>
+</kw>
+<kw name="Enter Valid Email" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:26:59.453242" level="INFO">Typing text 'farry123@gmail.com' into text field '//input[@placeholder='Enter Your email']'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:26:59.452399" elapsed="0.598949"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:26:59.451333" elapsed="0.600347"/>
+</kw>
+<kw name="Select Gender" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:27:00.053278" level="INFO">Clicking element '//mat-radio-button[@id="mat-radio-6"]'.</msg>
+<arg>${FEMALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:27:00.052834" elapsed="0.390494"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:27:00.052187" elapsed="0.391429"/>
+</kw>
+<kw name="Accept Terms and Conditions" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:27:00.446812" level="INFO">Clicking element '//span[@class='mat-checkbox-inner-container' ]'.</msg>
+<arg>${TERMS_AND_CONDITIONS_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:27:00.444905" elapsed="0.450416"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:27:00.444030" elapsed="0.451626"/>
+</kw>
+<kw name="Click on SignUp Button" owner="SignUpKeyWords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-02T14:27:00.898727" elapsed="0.526730"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:27:01.425951" elapsed="0.253579"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:27:01.680690" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:27:01.680118" elapsed="0.422314"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:27:00.896242" elapsed="1.206508"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:27:43.227499" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-408.png"&gt;&lt;img src="selenium-screenshot-408.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-02T14:27:43.227898" level="FAIL">Text 'OTP Code' did not appear in 30 seconds.</msg>
+<arg>OTP Code</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-01-02T14:27:02.103133" elapsed="41.129846">Text 'OTP Code' did not appear in 30 seconds.</status>
+</kw>
+<kw name="Enter OTP" owner="SignUpKeyWords">
+<status status="NOT RUN" start="2025-01-02T14:27:43.233736" elapsed="0.000118"/>
+</kw>
+<kw name="Click on Confirm OTP Button" owner="SignUpKeyWords">
+<status status="NOT RUN" start="2025-01-02T14:27:43.234177" elapsed="0.000105"/>
+</kw>
+<kw name="Assert On Subscription Page" owner="SignUpKeyWords">
+<status status="NOT RUN" start="2025-01-02T14:27:43.234649" elapsed="0.000074"/>
+</kw>
+<kw name="Click On Subscribe Button" owner="SignUpKeyWords">
+<status status="NOT RUN" start="2025-01-02T14:27:43.235064" elapsed="0.000071"/>
+</kw>
+<kw name="Assert On Login Page" owner="SignUpKeyWords">
+<status status="NOT RUN" start="2025-01-02T14:27:43.235442" elapsed="0.000077"/>
+</kw>
+<status status="FAIL" start="2025-01-02T14:26:56.930794" elapsed="46.305010">Text 'OTP Code' did not appear in 30 seconds.</status>
+</kw>
+<kw name="End Web Test" owner="CommonKeyWords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-02T14:27:43.238725" elapsed="3.030447"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:27:43.237823" elapsed="3.031614"/>
+</kw>
+<doc>This test case verifies that clicking the Subscribe button navigates the user to the Login page.</doc>
+<tag>navigation</tag>
+<tag>subscribe_button</tag>
+<status status="FAIL" start="2025-01-02T14:26:41.980222" elapsed="64.289733">Text 'OTP Code' did not appear in 30 seconds.</status>
+</test>
+<test id="s1-t3" name="Verify that user cannot sign up with a registered email" line="24">
+<kw name="Begin Web Test" owner="CommonKeyWords" type="SETUP">
+<kw name="Configure Test Timing" owner="CommonKeyWords">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${COMMON_IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:27:46.274902" elapsed="0.000452"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_TIME_OUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-01-02T14:27:46.275644" elapsed="0.000336"/>
+</kw>
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_LOAD_TIME_OUT}</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:27:46.276273" elapsed="0.000336"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${COMMON_SELENIUM_SPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-02T14:27:46.276886" elapsed="0.000350"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:27:46.274406" elapsed="0.003000"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:27:46.279800" level="INFO">Opening browser 'chrome' to base url 'https://itammen.com'.</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:27:46.279447" elapsed="13.667591"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:27:46.278618" elapsed="13.668860"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:27:46.277706" elapsed="13.670023"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:27:59.951159" level="INFO">Using existing browser from index 3.</msg>
+<msg time="2025-01-02T14:27:59.951293" level="INFO">Opening url 'https://itammen.com'</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:27:59.950713" elapsed="1.361635"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:27:59.949739" elapsed="1.362856"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:27:59.948571" elapsed="1.364232"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<arg>@{KWARGS}</arg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-02T14:28:01.315975" elapsed="0.510017"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:28:01.315172" elapsed="0.512778"/>
+</kw>
+<arg>MAXIMIZE BROWSER WINDOW</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:28:01.313815" elapsed="0.514553"/>
+</kw>
+<kw name="Zoom Out" owner="CommonKeyWords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:01.831801" level="INFO">Executing JavaScript:
+document.body.style.zoom='75%'
+Without any arguments.</msg>
+<arg>document.body.style.zoom='75%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-02T14:28:01.830424" elapsed="0.235946"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:01.829165" elapsed="0.237648"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:27:46.273536" elapsed="15.793523"/>
+</kw>
+<kw name="Sign Up With Registerd Email" owner="SignUp">
+<kw name="Navigate To SingUp Page" owner="Header">
+<kw name="Assert for the header" owner="HeaderKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HEADR_lOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:28:02.072394" elapsed="0.523977"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:02.071372" elapsed="0.525451"/>
+</kw>
+<kw name="Click on SingUp Buttton" owner="HeaderKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:02.599464" level="INFO">Clicking element '//a [@class ='register ng-star-inserted']'.</msg>
+<arg>${SIGNUP-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:02.598796" elapsed="0.808771"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:28:03.408566" elapsed="0.452891"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:02.597771" elapsed="1.263968"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:02.069795" elapsed="1.792095"/>
+</kw>
+<kw name="Enter User Information" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:03.863422" level="INFO">Typing text 'Rasha Yasser' into text field '//input[@placeholder='Enter Your Name']'.</msg>
+<arg>${USER_NAME_INPUT}</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:03.862903" elapsed="0.957669"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:04.821942" level="INFO">Typing text '08-11-1999' into text field '//input[@placeholder='Enter Your DOB']'.</msg>
+<arg>${DATE_OF_BIRTH_INPUT}</arg>
+<arg>${BRITH_DATE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:04.821243" elapsed="0.611816"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:03.862326" elapsed="1.571222"/>
+</kw>
+<kw name="Enter Registerd Email" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:05.436195" level="INFO">Typing text 'farry.yasser@gmail.com' into text field '//input[@placeholder='Enter Your email']'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>farry.yasser@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:05.435318" elapsed="1.113797"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:05.434336" elapsed="1.115181"/>
+</kw>
+<kw name="Select Gender" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:06.551421" level="INFO">Clicking element '//mat-radio-button[@id="mat-radio-6"]'.</msg>
+<arg>${FEMALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:06.550893" elapsed="0.896065"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:06.549966" elapsed="0.897284"/>
+</kw>
+<kw name="Accept Terms and Conditions" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:07.448998" level="INFO">Clicking element '//span[@class='mat-checkbox-inner-container' ]'.</msg>
+<arg>${TERMS_AND_CONDITIONS_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:07.448454" elapsed="0.428685"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:07.447668" elapsed="0.429850"/>
+</kw>
+<kw name="Click on SignUp Button" owner="SignUpKeyWords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-02T14:28:07.878840" elapsed="4.851400"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:28:12.731248" elapsed="0.240739"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:12.973385" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:12.972649" elapsed="0.475349"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:07.878111" elapsed="5.570242"/>
+</kw>
+<kw name="Observe Registerd Email Message" owner="SignUpKeyWords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:24.435378" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-409.png"&gt;&lt;img src="selenium-screenshot-409.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-02T14:28:24.435843" level="FAIL">Element '//span[@class="mat-simple-snack-bar-content" and normalize-space(text())="The email has already been taken."]' not visible after 10 seconds.</msg>
+<arg>${EMAIL_REGISTERED_MESSAGE}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-01-02T14:28:13.449568" elapsed="10.989552">Element '//span[@class="mat-simple-snack-bar-content" and normalize-space(text())="The email has already been taken."]' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-01-02T14:28:13.448852" elapsed="10.990924">Element '//span[@class="mat-simple-snack-bar-content" and normalize-space(text())="The email has already been taken."]' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-01-02T14:28:02.068613" elapsed="22.371569">Element '//span[@class="mat-simple-snack-bar-content" and normalize-space(text())="The email has already been taken."]' not visible after 10 seconds.</status>
+</kw>
+<kw name="End Web Test" owner="CommonKeyWords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-02T14:28:24.444170" elapsed="2.785361"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:24.442903" elapsed="2.787038"/>
+</kw>
+<doc>This test case checks that a user cannot sign up using an email that is already registered in the system.</doc>
+<tag>negative, registered_email</tag>
+<status status="FAIL" start="2025-01-02T14:27:46.271889" elapsed="40.958549">Element '//span[@class="mat-simple-snack-bar-content" and normalize-space(text())="The email has already been taken."]' not visible after 10 seconds.</status>
+</test>
+<test id="s1-t4" name="Verify that user cannot sign up with an invalid email format" line="29">
+<kw name="Begin Web Test" owner="CommonKeyWords" type="SETUP">
+<kw name="Configure Test Timing" owner="CommonKeyWords">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${COMMON_IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:28:27.235726" elapsed="0.000413"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_TIME_OUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-01-02T14:28:27.236425" elapsed="0.000349"/>
+</kw>
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_LOAD_TIME_OUT}</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:28:27.237056" elapsed="0.000337"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${COMMON_SELENIUM_SPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-02T14:28:27.237681" elapsed="0.000608"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:27.235239" elapsed="0.003264"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:27.242201" level="INFO">Opening browser 'chrome' to base url 'https://itammen.com'.</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:28:27.241560" elapsed="14.821514"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:28:27.240611" elapsed="14.823000"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:28:27.239039" elapsed="14.824947"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:42.070002" level="INFO">Using existing browser from index 4.</msg>
+<msg time="2025-01-02T14:28:42.070219" level="INFO">Opening url 'https://itammen.com'</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:28:42.069183" elapsed="2.239789"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:28:42.067230" elapsed="2.242432"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:28:42.064963" elapsed="2.245110"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<arg>@{KWARGS}</arg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-02T14:28:44.314451" elapsed="0.432363"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:28:44.312765" elapsed="0.434614"/>
+</kw>
+<arg>MAXIMIZE BROWSER WINDOW</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:28:44.310985" elapsed="0.436732"/>
+</kw>
+<kw name="Zoom Out" owner="CommonKeyWords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:44.749984" level="INFO">Executing JavaScript:
+document.body.style.zoom='75%'
+Without any arguments.</msg>
+<arg>document.body.style.zoom='75%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-02T14:28:44.748911" elapsed="0.234946"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:44.748255" elapsed="0.236018"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:27.234425" elapsed="17.750026"/>
+</kw>
+<kw name="Sign Up With Invalid Email Format" owner="SignUp">
+<kw name="Navigate To SingUp Page" owner="Header">
+<kw name="Assert for the header" owner="HeaderKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HEADR_lOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:28:44.988730" elapsed="0.321410"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:44.987709" elapsed="0.324005"/>
+</kw>
+<kw name="Click on SingUp Buttton" owner="HeaderKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:45.314347" level="INFO">Clicking element '//a [@class ='register ng-star-inserted']'.</msg>
+<arg>${SIGNUP-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:45.313724" elapsed="0.877332"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:28:46.191892" elapsed="0.285113"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:45.312731" elapsed="1.164564"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:44.986835" elapsed="1.490615"/>
+</kw>
+<kw name="Enter Invalid Email Formatt" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:46.479551" level="INFO">Typing text 'aedbjkasas' into text field '//input[@placeholder='Enter Your email']'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>aedbjkasas</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:46.478883" elapsed="0.727966"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:46.478146" elapsed="0.729028"/>
+</kw>
+<kw name="Enter User Information" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:47.209170" level="INFO">Typing text 'Rasha Yasser' into text field '//input[@placeholder='Enter Your Name']'.</msg>
+<arg>${USER_NAME_INPUT}</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:47.208360" elapsed="0.562576"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:47.772035" level="INFO">Typing text '08-11-1999' into text field '//input[@placeholder='Enter Your DOB']'.</msg>
+<arg>${DATE_OF_BIRTH_INPUT}</arg>
+<arg>${BRITH_DATE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:47.771424" elapsed="0.557486"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:47.207652" elapsed="1.121653"/>
+</kw>
+<kw name="Select Gender" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:48.331097" level="INFO">Clicking element '//mat-radio-button[@id="mat-radio-6"]'.</msg>
+<arg>${FEMALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:48.330576" elapsed="0.416463"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:48.329859" elapsed="0.417810"/>
+</kw>
+<kw name="Accept Terms and Conditions" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:48.750254" level="INFO">Clicking element '//span[@class='mat-checkbox-inner-container' ]'.</msg>
+<arg>${TERMS_AND_CONDITIONS_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:48.749619" elapsed="0.409247"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:48.748304" elapsed="0.410910"/>
+</kw>
+<kw name="Click on SignUp Button" owner="SignUpKeyWords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-02T14:28:49.160488" elapsed="4.821460"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:28:53.982549" elapsed="0.241415"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:28:54.224977" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:28:54.224479" elapsed="0.538373"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:28:49.159773" elapsed="5.603455"/>
+</kw>
+<kw name="Observe Invalid Email Pop Up" owner="SignUpKeyWords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:05.652671" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-410.png"&gt;&lt;img src="selenium-screenshot-410.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-02T14:29:05.653735" level="FAIL">Element '//span[@class='mat-simple-snack-bar-content' and text()='The email field must be a valid email address.']' not visible after 10 seconds.</msg>
+<arg>${INVALID_EMAIL_FORMAT_MESSAGE}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-01-02T14:28:54.764303" elapsed="10.892903">Element '//span[@class='mat-simple-snack-bar-content' and text()='The email field must be a valid email address.']' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-01-02T14:28:54.763704" elapsed="10.894102">Element '//span[@class='mat-simple-snack-bar-content' and text()='The email field must be a valid email address.']' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-01-02T14:28:44.985766" elapsed="20.672364">Element '//span[@class='mat-simple-snack-bar-content' and text()='The email field must be a valid email address.']' not visible after 10 seconds.</status>
+</kw>
+<kw name="End Web Test" owner="CommonKeyWords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-02T14:29:05.660647" elapsed="2.801052"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:05.659649" elapsed="2.802467"/>
+</kw>
+<doc>This test case ensures that the system prevents sign up when the email format is invalid</doc>
+<tag>negative, invalid_email_format</tag>
+<status status="FAIL" start="2025-01-02T14:28:27.232949" elapsed="41.229811">Element '//span[@class='mat-simple-snack-bar-content' and text()='The email field must be a valid email address.']' not visible after 10 seconds.</status>
+</test>
+<test id="s1-t5" name="Verify that user cannot sign up without entering email or phone number" line="34">
+<kw name="Begin Web Test" owner="CommonKeyWords" type="SETUP">
+<kw name="Configure Test Timing" owner="CommonKeyWords">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${COMMON_IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:29:08.471062" elapsed="0.000535"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_TIME_OUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-01-02T14:29:08.472125" elapsed="0.000500"/>
+</kw>
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_LOAD_TIME_OUT}</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:29:08.473007" elapsed="0.000387"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${COMMON_SELENIUM_SPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-02T14:29:08.473753" elapsed="0.000408"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:08.470407" elapsed="0.003943"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:08.477843" level="INFO">Opening browser 'chrome' to base url 'https://itammen.com'.</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:29:08.477085" elapsed="9.837402"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:29:08.475771" elapsed="9.839241"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:29:08.474750" elapsed="9.840623"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:18.325216" level="INFO">Using existing browser from index 5.</msg>
+<msg time="2025-01-02T14:29:18.325359" level="INFO">Opening url 'https://itammen.com'</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:29:18.324491" elapsed="1.301859"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:29:18.321999" elapsed="1.304763"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:29:18.316289" elapsed="1.310767"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<arg>@{KWARGS}</arg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-02T14:29:19.629887" elapsed="0.214979"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:29:19.628994" elapsed="0.216193"/>
+</kw>
+<arg>MAXIMIZE BROWSER WINDOW</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:29:19.627800" elapsed="0.217650"/>
+</kw>
+<kw name="Zoom Out" owner="CommonKeyWords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:19.850336" level="INFO">Executing JavaScript:
+document.body.style.zoom='75%'
+Without any arguments.</msg>
+<arg>document.body.style.zoom='75%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-02T14:29:19.847048" elapsed="0.216853"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:19.845912" elapsed="0.218300"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:08.469337" elapsed="11.595054"/>
+</kw>
+<kw name="Sign Up Without Entered Email or Phone Number" owner="SignUp">
+<kw name="Navigate To SingUp Page" owner="Header">
+<kw name="Assert for the header" owner="HeaderKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HEADR_lOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:29:20.067259" elapsed="0.291596"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:20.066642" elapsed="0.292537"/>
+</kw>
+<kw name="Click on SingUp Buttton" owner="HeaderKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:20.360919" level="INFO">Clicking element '//a [@class ='register ng-star-inserted']'.</msg>
+<arg>${SIGNUP-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:20.360436" elapsed="0.846682"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:29:21.208132" elapsed="0.387810"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:20.359699" elapsed="1.237247"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:20.066048" elapsed="1.531314"/>
+</kw>
+<kw name="Enter User Information" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:21.604851" level="INFO">Typing text 'Rasha Yasser' into text field '//input[@placeholder='Enter Your Name']'.</msg>
+<arg>${USER_NAME_INPUT}</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:21.603793" elapsed="0.783098"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:22.388077" level="INFO">Typing text '08-11-1999' into text field '//input[@placeholder='Enter Your DOB']'.</msg>
+<arg>${DATE_OF_BIRTH_INPUT}</arg>
+<arg>${BRITH_DATE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:22.387429" elapsed="0.566510"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:21.602503" elapsed="1.352438"/>
+</kw>
+<kw name="Select Gender" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:22.957114" level="INFO">Clicking element '//mat-radio-button[@id="mat-radio-6"]'.</msg>
+<arg>${FEMALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:22.956515" elapsed="0.390545"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:22.955619" elapsed="0.391907"/>
+</kw>
+<kw name="Accept Terms and Conditions" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:23.349927" level="INFO">Clicking element '//span[@class='mat-checkbox-inner-container' ]'.</msg>
+<arg>${TERMS_AND_CONDITIONS_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:23.349185" elapsed="0.416713"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:23.348240" elapsed="0.418136"/>
+</kw>
+<kw name="Click on SignUp Button" owner="SignUpKeyWords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-02T14:29:23.767582" elapsed="0.546449"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:29:24.314831" elapsed="0.260030"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:24.575919" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:24.575385" elapsed="0.498554"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:23.766912" elapsed="1.307373"/>
+</kw>
+<kw name="Observe Pop Up Email Field Is Required" owner="SignUpKeyWords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:26.038814" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<arg>${POP_UP_EMAIL_FIELD_IS_REQUIRED}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:29:25.075446" elapsed="1.401434"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:25.074776" elapsed="1.402486"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:20.065321" elapsed="6.412096"/>
+</kw>
+<kw name="End Web Test" owner="CommonKeyWords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-02T14:29:26.479397" elapsed="2.333204"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:26.478736" elapsed="2.334197"/>
+</kw>
+<doc>This test case verifies that a user cannot complete the sign-up process without entering either an email address or phone number.</doc>
+<tag>negative, missing_email_phone</tag>
+<status status="PASS" start="2025-01-02T14:29:08.467828" elapsed="20.345726"/>
+</test>
+<test id="s1-t6" name="Verify that user cannot sign up without accepting terms and conditions" line="40">
+<kw name="Begin Web Test" owner="CommonKeyWords" type="SETUP">
+<kw name="Configure Test Timing" owner="CommonKeyWords">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${COMMON_IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:29:28.818371" elapsed="0.000486"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_TIME_OUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-01-02T14:29:28.819175" elapsed="0.000338"/>
+</kw>
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_LOAD_TIME_OUT}</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:29:28.820271" elapsed="0.000370"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${COMMON_SELENIUM_SPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-02T14:29:28.820950" elapsed="0.000343"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:28.817842" elapsed="0.003622"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:28.823882" level="INFO">Opening browser 'chrome' to base url 'https://itammen.com'.</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:29:28.823513" elapsed="9.673497"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:29:28.822698" elapsed="9.674663"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:29:28.821781" elapsed="9.675835"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:38.501008" level="INFO">Using existing browser from index 6.</msg>
+<msg time="2025-01-02T14:29:38.501133" level="INFO">Opening url 'https://itammen.com'</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:29:38.500584" elapsed="0.883364"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:29:38.499349" elapsed="0.884999"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:29:38.498196" elapsed="0.886517"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<arg>@{KWARGS}</arg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-02T14:29:39.396280" elapsed="0.569093"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:29:39.395126" elapsed="0.570844"/>
+</kw>
+<arg>MAXIMIZE BROWSER WINDOW</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:29:39.393475" elapsed="0.572875"/>
+</kw>
+<kw name="Zoom Out" owner="CommonKeyWords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:39.970061" level="INFO">Executing JavaScript:
+document.body.style.zoom='75%'
+Without any arguments.</msg>
+<arg>document.body.style.zoom='75%'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-02T14:29:39.967908" elapsed="0.261577"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:39.966990" elapsed="0.263175"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:28.816964" elapsed="11.413504"/>
+</kw>
+<kw name="Sign Up Without Accepting Terms and Conditions" owner="SignUp">
+<kw name="Navigate To SingUp Page" owner="Header">
+<kw name="Assert for the header" owner="HeaderKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HEADR_lOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:29:40.235829" elapsed="1.412137"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:40.234921" elapsed="1.413566"/>
+</kw>
+<kw name="Click on SingUp Buttton" owner="HeaderKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:41.651542" level="INFO">Clicking element '//a [@class ='register ng-star-inserted']'.</msg>
+<arg>${SIGNUP-BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:41.650623" elapsed="0.838339"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TERMS_LINK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:29:42.489829" elapsed="0.257042"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:41.649288" elapsed="1.097986"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:40.233880" elapsed="2.513545"/>
+</kw>
+<kw name="Enter User Information" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:42.749300" level="INFO">Typing text 'Rasha Yasser' into text field '//input[@placeholder='Enter Your Name']'.</msg>
+<arg>${USER_NAME_INPUT}</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:42.748705" elapsed="0.750218"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:43.500347" level="INFO">Typing text '08-11-1999' into text field '//input[@placeholder='Enter Your DOB']'.</msg>
+<arg>${DATE_OF_BIRTH_INPUT}</arg>
+<arg>${BRITH_DATE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:43.499616" elapsed="0.702252"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:42.747973" elapsed="1.454214"/>
+</kw>
+<kw name="Enter Valid Email" owner="SignUpKeyWords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:44.204097" level="INFO">Typing text 'farry123@gmail.com' into text field '//input[@placeholder='Enter Your email']'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:44.203456" elapsed="0.630448"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:44.202733" elapsed="0.631803"/>
+</kw>
+<kw name="Select Gender" owner="SignUpKeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:44.839799" level="INFO">Clicking element '//mat-radio-button[@id="mat-radio-6"]'.</msg>
+<arg>${FEMALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-02T14:29:44.838880" elapsed="0.432047"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:44.837142" elapsed="0.434344"/>
+</kw>
+<kw name="Observe That Sign Up Button Is Disabled" owner="SignUpKeyWords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-02T14:29:45.273889" elapsed="2.201001"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-02T14:29:47.475447" elapsed="0.241487"/>
+</kw>
+<kw name="Element Should Be Disabled" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<status status="PASS" start="2025-01-02T14:29:47.717990" elapsed="0.246948"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:45.272455" elapsed="2.692799"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:40.232667" elapsed="7.732742"/>
+</kw>
+<kw name="End Web Test" owner="CommonKeyWords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-02T14:29:47.967084" elapsed="2.277938"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:47.966412" elapsed="2.279098"/>
+</kw>
+<doc>This test case checks that the sign-up button remains disabled if the user does not accept the terms and conditions.</doc>
+<tag>negative, no_terms_acceptance</tag>
+<status status="PASS" start="2025-01-02T14:29:28.815583" elapsed="21.431050"/>
+</test>
+<test id="s1-t7" name="Verify that user can sign up with a valid phone number" line="45">
+<kw name="Begin Web Test" owner="CommonKeyWords" type="SETUP">
+<kw name="Configure Test Timing" owner="CommonKeyWords">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${COMMON_IMPLICIT_WAIT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:29:50.255891" elapsed="0.002031"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_TIME_OUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-01-02T14:29:50.258578" elapsed="0.001393"/>
+</kw>
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>${COMMON_LOAD_TIME_OUT}</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2025-01-02T14:29:50.261195" elapsed="0.001014"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${COMMON_SELENIUM_SPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-01-02T14:29:50.263270" elapsed="0.000893"/>
+</kw>
+<status status="PASS" start="2025-01-02T14:29:50.254057" elapsed="0.010580"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:50.269055" level="INFO">Opening browser 'chrome' to base url 'https://itammen.com'.</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:29:50.268507" elapsed="5.241711"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:29:50.267114" elapsed="5.243864"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:29:50.265462" elapsed="5.246350"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-02T14:29:55.518246" level="INFO">Using existing browser from index 7.</msg>
+<msg time="2025-01-02T14:29:55.518484" level="INFO">Opening url 'https://itammen.com'</msg>
+<arg>@{KWARGS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-02T14:29:55.517433" elapsed="7.226567"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:29:55.514945" elapsed="7.229377"/>
+</kw>
+<arg>OPEN BROWSER</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+<doc>this keyword will help to make your test scuceeded and if failed it retry to make it success this could be used for clcik element/ button and Run Keyword until Success    seleniumlibrary.input text</doc>
+<status status="PASS" start="2025-01-02T14:29:55.512683" elapsed="7.231910"/>
+</kw>
+<kw name="Run Keyword until Success" owner="CommonKeyWords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<arg>@{KWARGS}</arg>
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-02T14:30:02.748353" elapsed="0.249544"/>
+</kw>
+<arg>${retry}</arg>
+<arg>${retry_interval}</arg>
+<arg>${KW}</arg>
+<arg>@{KWARGS}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-02T14:30:02.746848" elapsed="0.251433"/>
